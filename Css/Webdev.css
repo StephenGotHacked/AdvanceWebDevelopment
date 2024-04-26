@@ -1,27 +1,39 @@
 .activities{
-            background-color: rgba(255, 0, 179,0.9);
-            border-top: 5pt solid black;
-            border-bottom: 5pt solid black;;
-            text-align: center;
-            padding-top: 10pt;
-            padding-bottom: 10pt;
-            margin-bottom: 30pt;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .activities a{
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            font-weight: bold;
-            font-size: 15pt;
-            transition:all 3s;
-        }
+    border-top: 5pt solid rgb(255, 255, 255);
 
-        .activities a:hover{
-            transform: scale(1.1);
-            color: rgb(126, 0, 88);
-        }
+}
 
-        span{
-            padding-left: 100pt;
-            padding-right: 100pt;
-        }
+.essay h2, h4{
+    text-align: center;
+    font-weight: 20pt;
+}
+
+.essay h2{
+    text-decoration:underline;
+}
+
+.bgessay{
+    background-image: url(Pictures/GridPaper.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    overflow-x: hidden;
+}
+
+.essay{
+    font-family:'Lucida Handwriting';
+    /*
+    background-color: rgba(224, 221, 221, 0.938);*/
+    margin: 40pt 200pt;
+    padding-top: 30pt;
+    padding-bottom: 30pt;
+    border-radius: 30pt;
+}
+
+.essay p{
+    margin: 0 100pt;
+}
+
+.sql{
+    border-top: 5pt solid rgb(255, 255, 255);
+    
+}
