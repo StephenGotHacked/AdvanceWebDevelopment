@@ -1,0 +1,108 @@
+<style>
+	.mainheader{
+        background-color: black;
+        display: flex;
+        padding: 20px 20px;
+        color: white; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        }
+        
+        .mainheader a {
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+        transition: transform 0.3s;
+        }
+        
+        .mainheader a:hover {
+        transform: scale(1.1);
+        color: #eeff00;
+        }
+
+        .mainheader .flex-center {
+        display: flex;
+        position: fixed;
+        right: 0;
+        }
+	
+	.mainheader .github{
+        animation: rotate 4s linear infinite;
+    	}
+    	@keyframes rotate {
+       		0% {
+            transform: rotate(0deg);
+        	}
+        	100% {
+            transform: rotate(360deg);
+        	}
+    	}
+
+        .mainheader .ig{
+        animation: scaleAnimation 2s linear infinite alternate;
+    	}
+    	@keyframes scaleAnimation {
+        	0% {
+            transform: scale(1);
+        	}
+        	50% {
+            transform: scale(1.3); 
+        	}
+        	100% {
+            transform: scale(1);
+        	}
+      	 }
+	
+         .mainheader .twitter{
+         animation: upDown 1s ease-in-out infinite alternate;
+      	}
+	@keyframes upDown {
+	     	0% {
+            transform: translateY(0);
+        	}
+	       100% {
+            transform: translateY(4px);
+        	}
+    	}
+
+    	.mainheader .facebook{
+     	animation: leftright 1s ease-in-out infinite alternate;
+    	}
+        @keyframes leftright {
+            	0% {
+	     transform: translateX(0);
+            }
+            	100% {
+             transform: translatex(4px); 
+            }
+        }	
+	.off{
+        transition: transform 0.3s;
+        }
+	
+        .off:hover{
+ 	 transform: rotateY(180deg);
+	}
+</style>
+
+<header>
+	<div class="mainheader">
+	
+		<a href="index.html" style="margin-right: 30px; margin-left: 10px;"> HOME </a>
+		<a href="AboutMe.html" style="margin-right: 30px;"> ABOUT ME</a>
+		<a href="Webdev.html" style="margin-right: 30px;"> WEB DEVELOPMENT </a>
+		<a href="Resume.html" style="margin-right: 30px;"> RESUME </a>
+	
+	<div class="flex-center">
+	
+		<a href="https://github.com/StephenGotHacked"><i class="fa fa-github fa-lg github"></i></a>
+          	<a href="https://twitter.com/SkylerHades"><i class="fa fa-twitter fa-lg twitter"></i></a>	
+         	<a href="https://www.facebook.com/profile.php?id=100010312052822" target="_blank"><i class="fa fa-facebook fa-lg facebook"></i></a>
+          	<a href="https://www.instagram.com/ohediwiw/" target="_blank"><i class="fa fa-instagram fa-lg ig"></i></a>
+          	<a href="404.html"><i class="fa-solid fa-power-off off"></i></a>
+		
+	</div>
+	</div>
+</header>
