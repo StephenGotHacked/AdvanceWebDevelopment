@@ -1,0 +1,102 @@
+<html>
+	<header>
+		<div class="slidebar" id="slidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="#" >HOME</a>
+			<a href="#">CONTACT</a>
+			<a href="#">REGISTER</a>
+			<a href="#">SERVICES</a>
+		</div>
+
+		<div class="Navbar">
+			<span style="font-size:30px;cursor:pointer; color: white; margin-left: 20pt;" onclick="openNav()">☰ </span>
+			<div class="header-text">
+			  <h1 id="title" style="color: white;">Melodic Marketplace</h1>
+			</div>
+		  </div>
+
+		<div class="Navpic">
+		  <img src="Pictures/logo.png" width="200">
+		</div>
+	</header>
+
+	<script>
+		function openNav() {
+			document.getElementById("slidebar").style.width = "250px";
+		}
+			
+		function closeNav() {
+			document.getElementById("slidebar").style.width = "0";
+		}
+	</script>
+
+	<style>
+		.NavPic{
+			position: absolute;
+			margin-top: -40pt;
+			right: 0;
+		}
+
+		header{
+			background-color: rgb(126, 103, 1);
+			display: flex;
+		}
+
+		.slidebar {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: rgb(255, 208, 52);
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 60px;
+		}
+
+		.slidebar a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;
+		}
+		  
+		.slidebar a:hover {
+			color: #252525;
+		}
+		  
+		.slidebar .closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+
+		.Navbar{
+			display: flex;
+			position: relative;
+			align-items: center;
+			background-color: rgb(126, 103, 1);
+			padding: 10px;
+			height: 50pt;
+			font-family: "Agbalumo", system-ui;
+		}
+
+		a{
+			margin-left: 40pt;
+			text-decoration: none;
+			color: rgb(255, 255, 255);
+			font-family: "Tahoma";
+			font-size: medium;
+		}
+
+		a:hover{
+			color: white;
+			text-decoration: underline;
+		}
+	</style>
+
