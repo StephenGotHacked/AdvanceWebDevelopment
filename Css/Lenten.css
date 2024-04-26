@@ -3,9 +3,6 @@
             body{
                 margin: 0;
                 background-color: #000;
-                color: #eee;
-                font-family: Poppins;
-                font-size: 12px;
             }
 
             header{
@@ -25,6 +22,9 @@
             }
 
             .carousel{
+                color: #eee;
+                font-family: Poppins;
+                font-size: 12px;
                 height: 100vh;
                 margin-top: -50px;
                 width: 100vw;
