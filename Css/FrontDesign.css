@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-image: url(Pictures/Mainbackground.gif);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#detail{
+  background-color: rgba(20, 20, 20, 0.7);
+  text-align: center;
+  margin-top: 200pt;
+  margin-bottom: 250pt;
+  margin-left: 140pt;
+  margin-right: 140pt;
+  padding-top: 60pt;
+  padding-bottom: 40pt;
+  font-family:'Lucida Sans', 'Lucida Sans Regular';
+  font-weight: bold;
+  color: rgb(67, 0, 83);
+  -webkit-text-stroke: 0.80pt rgb(255, 255, 255);
+}
+
+#name:hover, #author:hover{
+  transform: scale(1.1);
+}
+
+@media only screen and(max-width:800px){
+	.responsive{
+		width:100%;
+		padding:10px;
+	}
+}

@@ -1,0 +1,74 @@
+.resume{
+    background-color: rgb(255, 255, 255);
+    border-top: 8px solid rgb(156, 156, 156);
+    border-bottom: 8px solid rgb(156, 156, 156);
+    padding-bottom: 60pt;
+    font-family: 'Trebuchet MS';
+    padding-left: 40pt;
+    padding-right: 49pt;
+    
+}
+
+.restable{
+    display: flex;
+    margin-left: 100pt;
+    margin-right: 30pt;
+}
+
+.respic{
+    border-radius: 200pt;
+    border: 2pt solid black;
+    margin-right: 20pt;
+    transition: transform 0.3s;
+}
+
+.respic:hover{
+    border: 2pt solid rgb(255, 0, 0);
+    transform: scale(1.4);
+}
+
+.resname{
+    padding-top: 40pt;
+    border-bottom: 2pt solid rgb(156, 156, 156);
+}
+
+.resdet{
+    padding-top: 50pt;  
+}
+
+.resdet a{
+    color: blue;
+}
+
+.resdet a:hover{
+    color: rgb(3, 3, 3);
+}
+
+.reshead{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(161, 3, 122)
+}
+
+.resabout{
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+    border-bottom: 2pt solid rgb(156, 156, 156);
+}
+
+.resexp{
+    padding-left: 0pt;
+    list-style: none;
+}
+
+.reskil{
+    padding-left: 10pt;
+}
+
+.rescol{
+    color:rgb(122, 121, 121)
+}
+
+.resper{
+    font-weight: bold;
+}
