@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+}
+
+.background{ 
+   overflow-x: hidden;
   background-image: url(Pictures/Mainbackground.gif);
   background-size: cover;
-  background-attachment: fixed;
-}
+  background-repeat: no-repeat;}
 
 #detail{
   background-color: rgba(20, 20, 20, 0.7);
