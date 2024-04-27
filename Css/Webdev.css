@@ -28,7 +28,9 @@
 }
 
 .essay p{
-    margin: 0 100pt;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
 .bgsql{
@@ -44,7 +46,9 @@
 }
 
 .sqlcode{
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
 .description{
@@ -75,7 +79,7 @@
 #sqlbtn2{
     text-decoration: none;   
     color: rgb(255, 255, 255);
-    margin-left: 62pt;
+    margin-left: 63pt;
     cursor: pointer
 }
 
