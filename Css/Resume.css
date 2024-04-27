@@ -11,8 +11,9 @@
 
 .restable{
     display: flex;
-    margin-left: 100pt;
-    margin-right: 30pt;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
 .respic{
