@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/a5749f0a3e.js" crossorigin="anonymous"></script>
 		    <script src="Javascript/HeaderFooter.js"></script>
 		    <script src="Javascript/FrontScript.js"></script>
+        <script src="Javascript/Sql.js"></script>
 	  
     </head>
 
@@ -46,6 +47,163 @@
         </div>
         <div class="bgsql">
           <div class="sql">
+            <h2>
+              SQL
+            </h2>
+            <div class="description">
+              <h3>What is Database?</h3>
+              <p>
+                A <span class="highlight">database</span> is simply a collection of related infomation.
+              </p>
+              <ul>
+                <li>
+                  Phonebook
+                </li>
+                <li>
+                  Shopping List
+                </li>
+                <li>
+                  TODO list
+                </li>
+                <li>
+                  Make-up kit
+                </li>
+              </ul>
+
+              <p>
+                <span class="highlight">Databases</span> can be stored in different was.
+              </p>
+              <ul>
+                <li>
+                  On paper(notebook)
+                </li>
+                <li>
+                  In your mind
+                </li>
+                <li>
+                  Pouch
+                </li>
+                <li>
+                  On a computer
+                </li>
+              </ul>
+
+              <p>
+                <span class="highlight">Database Management System (DBMS)</span><br>
+                A special software program that helps users create and maintain a database.
+              </p>
+              <ul style="list-style-type:circle;">
+                <li>
+                  Make it easy to manage large amounts of information
+                </li>
+                <li>
+                  Handles security
+                </li>
+                <li>
+                  Backups
+                </li>
+                <li>
+                  Importing / Exporting Data
+                </li>
+                <li>
+                  Interacts with software application such as Programming Languages
+                </li>
+              </ul>
+            </div>
+
+            <br>
+
+            <center>
+              <h1>C <span> R </span> <span> U </span> <span> D </span> </h1>
+              <h3><span class="highlight">CREATE</span> | READ | UPDATE | DELETE</h3>
+            </center>
+
+            <br>
+            <div class="description">
+              <h3>CREATE QUERY</h3>
+              <p>
+                SQL is not case sensitive whether your syntax is in CAPITAL or  small letter but if <br>
+                you are beginner, use CAPITAL letters for your syntax to locate it easily. <br><br>
+                
+                But, some syntax of sql are sensitive just like the intialize database name and table <br>
+                name, remember that the database and table you initialize will turn to small letters if you use <br>
+                a IDE(MySQL Workbench, PhpMyAdmin, etc.)
+
+                <br>
+                <br>
+
+                <span class="highlight"> CREATE DATABASE</span> is create syntax to create database. 
+                
+                <br>
+
+                Use<span class="highlight"> IF NOT EXIST</span> to override the create query if the database name is already existed.   
+
+                <br><br>
+
+                <span class="highlight">REMINDER: </span>User is not allowed to create a database with a same name to other database.
+              </p>
+            </div>
+            <div class="sqlcode">
+              <label class="DATABASE">CREATE DATABASE QUERY<span> <label id="sqlbtn"  onclick="Database()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+            
+              <br>
+              <textarea id="sql1textarea" rows="4" cols=50" readonly>
+CREATE DATABASE your_database_name;
+
+CREATE DATABASE IF NOT EXIST your_data base_name;
+              </textarea>
+            </div>
+
+            <br><br>
+
+            <div class="description">
+              <p>
+                <span class="highlight"> CREATE TABLE</span> is create syntax to create table. 
+                
+                <br>
+
+                Use<span class="highlight"> IF NOT EXIST</span> to override the create query if the table name is already existed.   
+
+                <br><br>
+
+                <span class="highlight">REMINDER: </span>User is not allowed to create a table with a same name to other table.
+              </p>
+            </div>
+
+            <div class="sqlcode">
+              <label class="DATABASE">CREATE TABLE QUERY<span> <label id="sqlbtn2"   onclick="Table()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+            
+              <br>
+              <textarea id="sql2textarea" rows="12" cols=51" readonly>
+CREATE TABLE your_table_name{
+    Data_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Data_Name VARCHAR(100),
+    Data_Age INT(100)
+};
+
+CREATE TABLE IF NOT EXIST your_data base_name{
+  Data_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Data_Name VARCHAR(100),
+    Data_Age INT(100)
+};
+              </textarea>
+            </div>
+
+            <br>
+
+            <center>
+              <h1>C <span> R </span> <span> U </span> <span> D </span> </h1>
+              <h3>CREATE | <span class="highlight">READ</span> | UPDATE | DELETE</h3>
+            </center>
+
+            <br>
+            
+            <div class="description">
+              <h3>READ QUERY</h3>
+              <p>
+                <span class="highlight">REMINDER: </span>this is the area to add another code
+              </p>
+            </div>
             
           </div>
         </div>
