@@ -3,12 +3,12 @@
 
 }
 
-.essay h2, h4{
+.essay h2, h4, .sql h2{
     text-align: center;
     font-weight: 20pt;
 }
 
-.essay h2{
+.essay h2, .sql h2{
     text-decoration:underline;
 }
 
@@ -21,9 +21,7 @@
 
 .essay{
     font-family:'Lucida Handwriting';
-    /*
-    background-color: rgba(224, 221, 221, 0.938);*/
-    margin: 40pt 200pt;
+    margin: 30pt ;
     padding-top: 30pt;
     padding-bottom: 30pt;
     border-radius: 30pt;
@@ -33,7 +31,67 @@
     margin: 0 100pt;
 }
 
-.sql{
+.bgsql{
+    background-color: rgb(22, 22, 22);
     border-top: 5pt solid rgb(255, 255, 255);
-    
+    color: rgb(255, 255, 255);
+    font-family: "Poppins";
+}
+
+.sql{
+    margin-top: 60pt;
+    padding-bottom: 60pt;
+}
+
+.sqlcode{
+    text-align: center;
+}
+
+.description{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.highlight{
+    color: rgb(255, 255, 0);
+}
+
+.DATABASE{
+    background-color:  rgb(54, 54, 54);
+    color: white;
+    padding: 5px 22px;
+    border-top-left-radius: 5pt;
+    border-top-right-radius: 5pt;
+}
+
+#sqlbtn{
+    text-decoration: none;   
+    color: rgb(255, 255, 255);
+    margin-left: 27pt;
+    cursor: pointer
+}
+
+#sqlbtn2{
+    text-decoration: none;   
+    color: rgb(255, 255, 255);
+    margin-left: 60pt;
+    cursor: pointer
+}
+
+#sqlbtn:active, #sqlbtn2:active{
+    color: rgb(0, 0, 0);
+}
+
+#sql1textarea, #sql2textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    margin-top: 0pt;
+    padding-left: 10pt;
+    border-bottom-left-radius: 5pt;
+    border-bottom-right-radius: 5pt;
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
 }
