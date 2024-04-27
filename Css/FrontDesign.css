@@ -23,6 +23,10 @@ body {
   -webkit-text-stroke: 0.80pt rgb(255, 255, 255);
 }
 
+#name, #author{
+ transition: 0.1s ease;
+}
+
 #name:hover, #author:hover{
   transform: scale(1.1);
 }
