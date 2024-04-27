@@ -124,33 +124,22 @@
               <p>
                 SQL is not case sensitive whether your syntax is in CAPITAL or  small letter but if <br>
                 you are beginner, use CAPITAL letters for your syntax to locate it easily. <br><br>
-                
                 But, some syntax of sql are sensitive just like the intialize database name and table <br>
                 name, remember that the database and table you initialize will turn to small letters if you use <br>
-                a IDE(MySQL Workbench, PhpMyAdmin, etc.)
-
-                <br>
-                <br>
-
-                <span class="highlight"> CREATE DATABASE</span> is create syntax to create database. 
-                
-                <br>
-
-                Use<span class="highlight"> IF NOT EXIST</span> to override the create query if the database name is already existed.   
-
-                <br><br>
-
+                a IDE(MySQL Workbench, PhpMyAdmin, etc.).<br><br>
+                <span class="highlight"> CREATE DATABASE</span> is create syntax to create database.<br>. 
+                Use<span class="highlight"> IF NOT EXIST</span> to override the create query if the database name is already existed.<br><br>   
                 <span class="highlight">REMINDER: </span>User is not allowed to create a database with a same name to other database.
               </p>
             </div>
             <div class="sqlcode">
-              <label class="DATABASE">CREATE DATABASE QUERY<span> <label id="sqlbtn"  onclick="Database()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+              <label class="DATABASE">CREATE DATABASE QUERY<span> <label id="sqlbtn" onclick="Database()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
             
               <br>
               <textarea id="sql1textarea" rows="4" cols=50" readonly>
-CREATE DATABASE your_database_name;
+CREATE DATABASE comics;
 
-CREATE DATABASE IF NOT EXIST your_data base_name;
+CREATE DATABASE IF NOT EXIST comics;
               </textarea>
             </div>
 
@@ -158,34 +147,97 @@ CREATE DATABASE IF NOT EXIST your_data base_name;
 
             <div class="description">
               <p>
-                <span class="highlight"> CREATE TABLE</span> is create syntax to create table. 
-                
-                <br>
-
-                Use<span class="highlight"> IF NOT EXIST</span> to override the create query if the table name is already existed.   
-
-                <br><br>
-
+                <span class="highlight"> CREATE TABLE</span> is create syntax to create table.<br>
+                After declaring the Query and table name, next is initializing the fields of the data Char_ID as <br> 
+                INT or Integer, with AUTO_INCREMENT for automatic data input and lastly PRIMARY KEY to call <br> 
+                the ID as the Unique/Primary Key.<br><br>
+                Those syntax we use in ID is default and priotize in creating a table.<br><br>
+                If you want to add another field put coma(,) before adding new field.<br>
+                Char_First_Name as VARCHAR or String Value with 30 characters,<br>
+                and more...<br><br>
+                Use<span class="highlight"> IF NOT EXIST</span> to override the create query if the table name is already existed.<br><br>  
                 <span class="highlight">REMINDER: </span>User is not allowed to create a table with a same name to other table.
               </p>
             </div>
 
             <div class="sqlcode">
-              <label class="DATABASE">CREATE TABLE QUERY<span> <label id="sqlbtn2"   onclick="Table()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+              <label class="DATABASE">CREATE TABLE QUERY<span> <label id="sqlbtn2" onclick="Table()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
             
               <br>
-              <textarea id="sql2textarea" rows="12" cols=52" readonly>
-CREATE TABLE your_table_name{
-    Data_ID INT AUTO_INCREMENT PRIMARY KEY,
-    Data_Name VARCHAR(100),
-    Data_Age INT(100)
-};
+              <textarea id="sql2textarea" rows="18" cols="52" readonly>
+CREATE TABLE comicscharacters(
+    Char_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Char_First_Name VARCHAR(30),
+    Char_Last_Name VARCHAR(30),
+    Char_Verse_Name VARCHAR(30),
+    Char_Gender VARCHAR(6), 
+    Char_Verse VARCHAR(6)
+);
 
-CREATE TABLE IF NOT EXIST your_data base_name{
-  Data_ID INT AUTO_INCREMENT PRIMARY KEY,
-    Data_Name VARCHAR(100),
-    Data_Age INT(100)
-};
+CREATE TABLE IF NOT EXIST comicscharacters(
+    Char_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Char_First_Name VARCHAR(30),
+    Char_Last_Name VARCHAR(30),
+    Char_Verse_Name VARCHAR(30),
+    Char_Gender VARCHAR(6), 
+    Char_Verse VARCHAR(6)
+);
+              </textarea>
+            </div>
+
+            <br>
+
+            <div class="description">
+              <h3>INSERT QUERY</h3>
+              <p>
+                <span class="highlight">INSERT INTO</span> is insert syntax to insert data into the table.<br>
+                After declaring the Query, call the database name and use period(.) and call table name to <br>
+                bypass, and specifically insert the data into the main database and in the specific table.<br>
+                Lastly, input <span class="highlight">VALUES</span> then initialize the data of the table.<br><br>
+                <span class="highlight">REMINDER: </span>Make sure the data is same position to the parameter.
+              </p>
+            </div>
+
+            <br>
+
+          <div class="sqlcode">
+              <label class="DATABASE">INSERT QUERY<span> <label id="sqlbtn3" onclick="Insert()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+            
+              <br>
+
+              <textarea id="sql3textarea" rows="34" cols="70" readonly>
+INSERT INTO comics.comicscharacters (Char_First_Name, Char_Last_Name, Char_Verse_Name, Char_Gender, Char_Verse)
+VALUES  
+('Clark Joseph', 'Kent', 'Super Man', 'Male', 'DC'),
+('Anthony Edward', 'Stark', 'Iron Man', 'Male', 'Marvel'),
+('Bruce', 'Wayne', 'Bat Man', 'Male', 'DC'),
+('Peter Benjamin', 'Parker', 'Spider Man', 'Male', 'Marvel'),
+('Bruce', 'Banner', 'Hulk', 'Male', 'Marvel'),
+('Barry', 'Allen', 'Flash', 'Male', 'DC'),
+('Natasha', 'Romanova', 'Black Widow', 'Female', 'Marvel'),
+('Diana', 'Prince', 'Wonder Woman', 'Female', 'DC'),
+('Stephen', 'Strange', 'Doctor Strange', 'Male', 'Marvel'),
+('Alan', 'Scott', 'Green Lantern', 'Male', 'DC'),
+('Victor', 'Stone', 'Cyborg', 'Male', 'DC'),
+('Thor', 'Odinson', 'Thor', 'Male', 'Marvel'),
+('Thanos', 'N.A', 'Thanos', 'Male', 'Marvel'),
+('Dick', 'Grayson', 'Robin', 'Male', 'DC'),
+('Wade', 'Wilson', 'Deadpool', 'Male', 'Marvel'),
+('Arthur', 'Curry', 'Aqua Man', 'Male', 'DC'),
+('Steve', 'Rogers', 'Captain America', 'Male', 'Marvel'),
+('Jack Oswald', 'White', 'Joker', 'Male', 'DC'),
+('Victor', 'Shade', 'Vision', 'Male', 'Marvel'),
+('Johann', 'Shmidt', 'Red Skull', 'Male', 'Marvel'),
+('Eobard', 'Thawne', 'Reverse Flash', 'Male', 'DC'),
+('Uxas', 'N.A', 'Darkseid', 'Male', 'DC'),
+('Gamora Zen Whoberi Ben', 'Titan', 'Gamora', 'Female', 'Marvel'),
+('Selina', 'Kyle', 'Cat Woman', 'Female', 'DC'),
+('Peter', 'Quill', 'Star Lord', 'Male', 'Marvel'),
+('Benjamin Jacob ', 'Grimm', 'Thing', 'Male', 'DC'),
+('Eddie', 'Brock', 'Venom', 'Male', 'Marvel'),
+('Kara', 'Zor-El', 'Super Girl', 'Female', 'DC'),
+('Billy', 'Batson', 'Shazam', 'Male', 'DC'),
+('Wanda', 'Maximoff', 'Wanda', 'Female', 'Marvel');
               </textarea>
             </div>
 
@@ -201,10 +253,203 @@ CREATE TABLE IF NOT EXIST your_data base_name{
             <div class="description">
               <h3>READ QUERY</h3>
               <p>
-                <span class="highlight">REMINDER: </span>this is the area to add another code
+                <span class="highlight">SELECT</span> is a syntax to read and to show the data of the table. <br>
+                Using (*) is also known as 'all' the means is you selecting all of the data in the table. Lastly  <br>
+                is calling our table name, it is up to you if you want to add a conditions.<br><br>
+                <span class="highlight">REMINDER: </span>This is a default Select Query
               </p>
             </div>
-            
+
+            <div class="sqlcode">
+              <label class="DATABASE">SELECT QUERY<span> <label id="sqlbtn4" onclick="Select1()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+              
+              <br>
+
+              <textarea id="sql4textarea" rows="2" cols=41" readonly>
+SELECT * FROM comics.comicscharacters;
+              </textarea>
+            </div>
+
+            <br>
+
+            <div class="description">
+              <p>
+                <span class="highlight">SELECT</span> is a syntax to read and to show the data of the table.<br>
+                Now, we call an specific fields it is Char_Verse which is responsible for holding the data of <br>
+                DC and Marvel, then we call our table name, but the twist is we use conditional statement <br>
+                here, which is the <span class="highlight">WHERE</span> syntax. <br><br>
+                <span class="highlight">REMINDER: </span>This is a Select Query Where we only want the Output is DC only
+              </p>
+            </div>
+
+            <br>
+
+            <div class="sqlcode">
+              <label class="DATABASE">SELECT QUERY<span> <label id="sqlbtn5" onclick="Select2()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+              
+              <br>
+
+              <textarea id="sql5textarea" rows="2" cols="72" readonly>
+SELECT Char_Verse FROM comics.comicscharacters WHERE Char_Verse = 'DC';
+              </textarea>
+              </div>
+
+              <div class="description">
+                <p>
+                  <span class="highlight">REMINDER: </span>This is a same Select Query to DC but we only want the Output was Marvel only
+                </p>
+              </div>
+
+              <div class="sqlcode">
+                <label class="DATABASE">SELECT QUERY<span> <label id="sqlbtn6" onclick="Select3()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+                
+                <br>
+
+                <textarea id="sql6textarea" rows="2" cols="77" readonly>
+SELECT Char_Verse FROM comics.comicscharacters WHERE Char_Verse = 'Marvel';
+                </textarea>
+                </div>
+
+                <br>
+
+                <div class="description">
+                  <p>
+                    <span class="highlight">REMINDER: </span>This is Select Query in Data's First name Where the Output we want to show is<br> 
+                    is the first name starts with A, W and B.
+                  </p>
+                </div>
+                
+                <br>
+
+                <div class="sqlcode">
+                  <label class="DATABASE">SELECT QUERY<span> <label id="sqlbtn7" onclick="Select4()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+                  
+                  <br>
+  
+                  <textarea id="sql7textarea" rows="3" cols="77" readonly>
+SELECT Char_First_Name FROM comics.comicscharacters WHERE Char_First_Name 
+like 'A%' OR  Char_First_Name like 'W%' OR  Char_First_Name like 'B%';
+                  </textarea>
+                  </div>
+                  
+                  <div class="description">
+                    <p>
+                      <span class="highlight">REMINDER: </span>This is Select Query that will concatinate the two fields in to one new field<br> 
+                      using <span class="highlight">CONCAT</span> then calling the Char_First_Name and Char_Last_Name and the result <br>
+                      will be Char_Full_Name, <span class="highlight">CONCAT</span> will help you to mix to data and make it new data in <br> 
+                      your table.
+                    </p>
+                  </div>
+    
+                  <div class="sqlcode">
+                    <label class="DATABASE">SELECT QUERY<span> <label id="sqlbtn8" onclick="Select5()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+                    
+                    <br>
+    
+                    <textarea id="sql8textarea" rows="3" cols="77" readonly>
+SELECT CONCAT(Char_First_Name, ' ', Char_Last_Name) as Char_Full_Name 
+FROM comics.comicscharacters;
+                    </textarea>
+                    </div>  
+
+                <br>
+
+                <center>
+                  <h1>C <span> R </span> <span> U </span> <span> D </span> </h1>
+                  <h3>CREATE | READ | <span class="highlight">UPDATE</span> | DELETE</h3>
+                </center>
+    
+                <br>
+                
+                <div class="description">
+                  <h3>UPDATE QUERY</h3>
+                  <p>
+                    <span class="highlight">UPDATE</span> is a syntax to update or revise the initialize data in table.<br>
+                    After we put Update and bypass the database and table name we need to use the term<br>
+                    <span class="highlight">SET</span> to holds the new value of in Char_First_Name then we will need a Conditional here<br>
+                    WHERE the Char_ID is 2<br><br>
+                    <span class="highlight">REMINDER: </span>This is a Update Query the Where conditions only used the ID or the primary<br>
+                     key of the table
+                  </p>
+                </div>
+    
+                <div class="sqlcode">
+                  <label class="DATABASE">UPDATE QUERY<span> <label id="sqlbtn9" onclick="Update()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+                  
+                  <br>
+    
+                  <textarea id="sql9textarea" rows="3" cols=55" readonly>
+UPDATE comics.comicscharacters SET Char_First_Name = 'Stephen David' WHERE Char_ID = 2;
+                  </textarea>
+                </div>
+
+                <br>
+
+                <center>
+                  <h1>C <span> R </span> <span> U </span> <span> D </span> </h1>
+                  <h3>CREATE | READ | UPDATE | <span class="highlight">DELETE</span></h3>
+                </center>
+    
+                <br>
+                
+                <div class="description">
+                  <h3>DELETE QUERY</h3>
+                  <p>
+                    <span class="highlight">DELETE</span> is a syntax to delete an specific data in table.<br>
+                    After we put Delete and bypass the database and table name then we will need to do is<br>
+                    a Conditional statement here WHERE the Char_ID is 2<br><br>
+                    <span class="highlight">REMINDER: </span>This is a Delete Query the Where conditions only used the ID or the primary<br>
+                     key of the table
+                  </p>
+                </div>
+    
+                <div class="sqlcode">
+                  <label class="DATABASE">DELETE QUERY<span> <label id="sqlbtn10" onclick="Delete()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+                  
+                  <br>
+    
+                  <textarea id="sql10textarea" rows="2" cols=55" readonly>
+DELETE FROM comics.comicscharacters WHERE Char_ID = 2;
+                  </textarea>
+                </div>
+
+                <div class="description">
+                  <h3>DROP QUERY</h3>
+                  <p>
+                    <span class="highlight">DROP</span> is a syntax to drop the data inside in table and also the table.<br>
+                    After we put DROP then classify it as TABLE it will drop the callout table in that database.<br><br>
+                    <span class="highlight">REMINDER: </span>This is a Drop Query to drop or delete the table.
+                  </p>
+                </div>
+    
+                <div class="sqlcode">
+                  <label class="DATABASE">DROP QUERY<span> <label id="sqlbtn11" onclick="Delete2()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+                  
+                  <br>
+    
+                  <textarea id="sql11textarea" rows="2" cols=37" readonly>
+DROP TABLE comics.comicscharacters;
+                  </textarea>
+                </div>
+
+                <br>
+
+                <div class="description">
+                  <p>
+                    <span class="highlight">REMINDER: </span>Last but not the least, This is a Drop Query to drop or delete the whole database.
+                  </p>
+                </div>
+    
+                <div class="sqlcode">
+                  <label class="DATABASE">DROP QUERY<span> <label id="sqlbtn12" onclick="Delete3()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
+                  
+                  <br>
+    
+                  <textarea id="sql12textarea" rows="2" cols=37" readonly>
+DROP DATABASE comics;
+                  </textarea>
+                </div>
+
           </div>
         </div>
       </div>
