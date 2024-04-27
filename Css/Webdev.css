@@ -31,6 +31,9 @@
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+    font-weight: bold;
+    padding-left: 70pt;
+    padding-right: 70pt;
 }
 
 .bgsql{
@@ -69,25 +72,65 @@
     border-top-right-radius: 5pt;
 }
 
+#sqlbtn, #sqlbtn2, #sqlbtn3, #sqlbtn4, #sqlbtn5, #sqlbtn6, #sqlbtn7, #sqlbtn8, #sqlbtn9, #sqlbtn10, #sqlbtn11, #sqlbtn12{
+    color: rgb(255, 255, 255);
+    cursor: pointer
+}
+
 #sqlbtn{
-    text-decoration: none;   
-    color: rgb(255, 255, 255);
     margin-left: 27pt;
-    cursor: pointer
 }
 
-#sqlbtn2{
-    text-decoration: none;   
-    color: rgb(255, 255, 255);
+#sqlbtn2{   
     margin-left: 63pt;
-    cursor: pointer
 }
 
-#sqlbtn:active, #sqlbtn2:active{
+#sqlbtn3{ 
+    margin-left: 205pt;
+}
+
+#sqlbtn4{ 
+    margin-left: 43pt;
+}
+
+#sqlbtn5{   
+    margin-left: 212pt;
+}
+
+#sqlbtn6{ 
+    margin-left: 241pt;
+}
+
+#sqlbtn7{
+    margin-left: 241pt;
+}
+
+#sqlbtn8{
+    margin-left: 241pt;
+}
+
+#sqlbtn9{
+    margin-left: 117pt;
+}
+
+#sqlbtn10{
+    margin-left: 120pt;
+}
+
+#sqlbtn11{
+    margin-left: 28pt;
+}
+
+#sqlbtn12{
+    margin-left: 28pt;
+}
+
+
+#sqlbtn:active, #sqlbtn2:active, #sqlbtn3:active, #sqlbtn4:active, #sqlbtn5:active, #sqlbtn6:active, #sqlbtn7:active, #sqlbtn8:active, #sqlbtn9:active #sqlbtn10:active, #sqlbtn11:active, #sqlbtn12:active{
     color: rgb(0, 0, 0);
 }
 
-#sql1textarea, #sql2textarea{
+#sql1textarea, #sql2textarea, #sql3textarea, #sql4textarea, #sql5textarea, #sql6textarea, #sql7textarea, #sql8textarea, #sql9textarea, #sql10textarea, #sql11textarea, #sql12textarea{
     resize: none;
     border: none;
     outline: none;
