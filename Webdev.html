@@ -137,7 +137,7 @@
               <label class="DATABASE">CREATE DATABASE QUERY<span> <label id="sqlbtn" onclick="Database()"><i class="fa-regular fa-clipboard" style="color: #ffffff;"></i> Copy code</label></span></label>
             
               <br>
-              <textarea id="sql1textarea" rows="4" cols=50" readonly>
+              <textarea id="sql1textarea" rows="4" cols=52" readonly>
 CREATE DATABASE comics;
 
 CREATE DATABASE IF NOT EXIST comics;
@@ -206,7 +206,7 @@ CREATE TABLE IF NOT EXIST comicscharacters(
             
               <br>
 
-              <textarea id="sql3textarea" rows="34" cols="70" readonly>
+              <textarea id="sql3textarea" rows="34" cols="72" readonly>
 INSERT INTO comics.comicscharacters (Char_First_Name, Char_Last_Name, Char_Verse_Name, Char_Gender, Char_Verse)
 VALUES  
 ('Clark Joseph', 'Kent', 'Super Man', 'Male', 'DC'),
@@ -266,7 +266,7 @@ VALUES
               
               <br>
 
-              <textarea id="sql4textarea" rows="2" cols=41" readonly>
+              <textarea id="sql4textarea" rows="2" cols=43" readonly>
 SELECT * FROM comics.comicscharacters;
               </textarea>
             </div>
@@ -290,7 +290,7 @@ SELECT * FROM comics.comicscharacters;
               
               <br>
 
-              <textarea id="sql5textarea" rows="2" cols="72" readonly>
+              <textarea id="sql5textarea" rows="2" cols="74" readonly>
 SELECT Char_Verse FROM comics.comicscharacters WHERE Char_Verse = 'DC';
               </textarea>
               </div>
@@ -306,7 +306,7 @@ SELECT Char_Verse FROM comics.comicscharacters WHERE Char_Verse = 'DC';
                 
                 <br>
 
-                <textarea id="sql6textarea" rows="2" cols="77" readonly>
+                <textarea id="sql6textarea" rows="2" cols="79" readonly>
 SELECT Char_Verse FROM comics.comicscharacters WHERE Char_Verse = 'Marvel';
                 </textarea>
                 </div>
@@ -327,7 +327,7 @@ SELECT Char_Verse FROM comics.comicscharacters WHERE Char_Verse = 'Marvel';
                   
                   <br>
   
-                  <textarea id="sql7textarea" rows="3" cols="77" readonly>
+                  <textarea id="sql7textarea" rows="3" cols="79" readonly>
 SELECT Char_First_Name FROM comics.comicscharacters WHERE Char_First_Name 
 like 'A%' OR  Char_First_Name like 'W%' OR  Char_First_Name like 'B%';
                   </textarea>
@@ -347,7 +347,7 @@ like 'A%' OR  Char_First_Name like 'W%' OR  Char_First_Name like 'B%';
                     
                     <br>
     
-                    <textarea id="sql8textarea" rows="3" cols="77" readonly>
+                    <textarea id="sql8textarea" rows="3" cols="79" readonly>
 SELECT CONCAT(Char_First_Name, ' ', Char_Last_Name) as Char_Full_Name 
 FROM comics.comicscharacters;
                     </textarea>
@@ -379,7 +379,7 @@ FROM comics.comicscharacters;
                   
                   <br>
     
-                  <textarea id="sql9textarea" rows="3" cols=55" readonly>
+                  <textarea id="sql9textarea" rows="3" cols=57" readonly>
 UPDATE comics.comicscharacters SET Char_First_Name = 'Stephen David' WHERE Char_ID = 2;
                   </textarea>
                 </div>
@@ -409,7 +409,7 @@ UPDATE comics.comicscharacters SET Char_First_Name = 'Stephen David' WHERE Char_
                   
                   <br>
     
-                  <textarea id="sql10textarea" rows="2" cols=55" readonly>
+                  <textarea id="sql10textarea" rows="2" cols=57" readonly>
 DELETE FROM comics.comicscharacters WHERE Char_ID = 2;
                   </textarea>
                 </div>
