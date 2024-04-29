@@ -1,6 +1,5 @@
 .activities{
     border-top: 5pt solid rgb(255, 255, 255);
-
 }
 
 .essay h2, h4, .sql h2{
@@ -49,9 +48,15 @@
 }
 
 .sqlcode{
+    border-radius: 5pt;
+    background-color:  rgb(54, 54, 54);
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+}
+
+.black{
+    background-color: black;
 }
 
 .description{
@@ -65,11 +70,8 @@
 }
 
 .DATABASE{
-    background-color:  rgb(54, 54, 54);
     color: white;
     padding: 5px 22px;
-    border-top-left-radius: 5pt;
-    border-top-right-radius: 5pt;
 }
 
 #sqlbtn, #sqlbtn2, #sqlbtn3, #sqlbtn4, #sqlbtn5, #sqlbtn6, #sqlbtn7, #sqlbtn8, #sqlbtn9, #sqlbtn10, #sqlbtn11, #sqlbtn12{
@@ -137,8 +139,6 @@
     overflow: hidden;
     margin-top: 0pt;
     padding-left: 10pt;
-    border-bottom-left-radius: 5pt;
-    border-bottom-right-radius: 5pt;
     background-color: rgb(0,0,0);
     color: rgb(255, 255, 255);
 }
