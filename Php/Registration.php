@@ -29,6 +29,16 @@
             
             <br><br>
 
+            <label for="gender">Gender: </label>
+
+            <select class="textbox" name="Gender_textbox" style="padding-right: 5pt;">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Prefer not say</option>
+            </select>
+
+            <br><br>
+
             <label for="email">Email: </label><input type="email" name="Email_textbox" class="textbox" placeholder="Email" required>
 
             <br><br>
