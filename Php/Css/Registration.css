@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    background-image: url('Pictures/Background.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.textbox{
+    border: 0;
+    border-bottom: 1pt solid gray;
+    padding-left: 10pt;
+    background-color: rgb(236, 235, 235);
+    font-family: 'Tahoma';
+}
+
+#form{
+    padding-left: 20pt;
+    padding-right: 20pt;
+    padding-bottom: 30pt;
+    margin-top: 40pt;
+    margin-bottom: 40pt;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    background-color: rgba(193, 193, 193, 0.5);
+    border-radius: 10pt;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to top, black, rgba(0,0,0,0));
+    border-image-slice: 1;
+}
+
+#register{
+    border: 1pt solid black;
+    border-radius: 5pt;
+    background-color: white;
+    color: black;
+    font-size: medium;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+#register:hover{
+    transform: scale(1.1);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);  
+}
+
+#form h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#form label{
+    font-weight: bold;
+}
+
+#form #age{
+    width: 60pt;
+}
+
+#birthdate{
+    cursor: text;
+}
+
+#checkbox{
+    font-size: 10pt;
+    color: rgb(84, 84, 84);
+    cursor: pointer;
+}
+
+.error{
+    border: 1pt solid red;
+}
+
+@media only screen and(max-width:800px){
+#form{
+    width:100%;
+    padding:10px;
+    }
+}
