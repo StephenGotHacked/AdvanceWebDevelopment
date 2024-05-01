@@ -19,7 +19,6 @@ $Conpass = $_POST['Conpass_textbox'];
 
 $databasequery = "CREATE DATABASE IF NOT EXISTS $database";
 if($connection->query($databasequery) === TRUE){
-    echo "Database Created Successfully";
 }
 
 $connection->select_db($database);
@@ -39,21 +38,9 @@ $tablequery = "CREATE TABLE IF NOT EXISTS phpaccount(
 )";
 
 if($connection->query($tablequery) === TRUE){
-    echo "Table Created Successfully";
 }
 
 $alterquery = "ALTER TABLE phpaccount AUTO_INCREMENT = 1";
 if($connection->query($alterquery) === TRUE){
-    echo "Altering ID Successfully";
 }
-
-
-$insertquery = "INSERT INTO phpaccount (First_Name, Last_Name, Birthdate, Age, Gender,Email, Con_Num, Username, Password, Con_Pass) VALUES ('$FirstName', '$LastName', '$Birthdate', '$Age', '$Gender', '$Email', '$ConNum', '$Username', '$Password', '$Conpass')";
-
-if($connection->query($insertquery) === TRUE){
-    header("Location: Dashboard.php");
-    exit();
-}
-
-$connection->close();
 ?>

@@ -10,7 +10,7 @@
 
 <body>
     <div class="container">
-        <form method="post" id="form" action="Connection.php">
+        <form method="post" id="form" action="Registration.php">
             <h1>REGISTER HERE</h1>
             <label for="first_name">First Name:</label>
             <input type="text" name="Fname_textbox" class="textbox" placeholder="First Name" required>
@@ -48,10 +48,28 @@
 
             <br><br>
 
-            <label for="username">Username: </label><input type="text" name="Username_textbox" placeholder="Username" class="textbox" required>
+            <label for="username">Username: </label><input type="text" name="Username_textbox" placeholder="Username" class="textbox" required><br>
+                <?php          
+                    require('Connection.php');
+                    if(isset($_POST['Submit'])) {
 
-            <br><br>
+                        $selectquery = "SELECT * FROM phpaccount WHERE Username='$Username'";
+                        $result = mysqli_query($connection, $selectquery);
 
+                        if(mysqli_num_rows($result) > 0) {
+                            echo "<center><label style='color:red; font-size: 8pt; padding-left: 5pt;'>*Username already exists in the database</label></center>";
+                            $connection->close();
+                        } else {
+                            $insertquery = "INSERT INTO phpaccount (First_Name, Last_Name, Birthdate, Age, Gender,Email, Con_Num, Username, Password, Con_Pass) VALUES ('$FirstName', '$LastName', '$Birthdate', '$Age', '$Gender', '$Email', '$ConNum', '$Username', '$Password', '$Conpass')";
+
+                            if($connection->query($insertquery) === TRUE){
+                                header("Location: Dashboard.php");
+                                exit();
+                            }
+                            $connection->close();
+                        }
+                    }
+                ?>
             <label for="password">Password: </label><input type="password" name="Password_textbox" placeholder="Password" id="password" class="textbox" required>
 
             <input type="checkbox" id="checkbox"><label id="checkbox">Show Password</label>
@@ -62,7 +80,7 @@
 
             <br><br>
             <center>
-                <input type="submit" value="REGISTER" id="register">
+                <input type="submit" name="Submit" value="REGISTER" id="register">
             </center>
         </form>
         </div>
