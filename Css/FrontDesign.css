@@ -6,7 +6,9 @@ body {
   overflow-x: hidden;
   background-image: url(Pictures/Mainbackground.gif);
   background-size: cover;
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 #detail{
   background-color: rgba(20, 20, 20, 0.7);

@@ -1,84 +1,127 @@
 .container{
-    background-image: url(Pictures/AboutMeBackground.gif);
+    padding-top: 80pt;
+    padding-bottom: 60pt;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.431)),url(Pictures/AboutBG.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    background-repeat:no-repeat;
     border-top: 8px solid rgb(156, 156, 156);
     border-bottom: 8px solid rgb(156, 156, 156);
-    text-align: center;
-    padding-left: 100pt;
-    padding-right: 100pt;
-    padding-top: 50pt;
-    padding-bottom: 160pt;
+    font-family: 'Poppins';
   }
 
-.hov{
-    color: white;
-    -webkit-text-stroke: 0.7pt black;
-    font-size: 30pt;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-bottom: 20pt;
+.contop{
+    text-align: center;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+#mydetail{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-size: 14pt;
 }
 
 .profpic{
-    border: 2pt;
-    border-style: solid;
-    border-color: black;
-    border-radius: 40pt;
-}
-.amp{
-    padding-right: 50pt;
-    transition: transform 0.4s;
+    border-radius: 100%;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px #ffffff;
+    }
+    100% {
+        box-shadow: 0 0 40px #000000;
+      }
+    0% {
+      box-shadow: 0 0 10px #ffffff;
+    }
   }
 
-.amp:hover{
-    transform: scale(1.4);
+#myname{
+    font-weight: bold;
+    font-size: 20pt;
 }
 
-.am{
-    color: white;
-    background-color: rgba(37, 37, 37, 0.7);
-    border-radius: 20px;
-}
-
-p{
-    padding-left: 10pt;
-    padding-right: 10pt;
-}
-
-p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: transform 0.3s;
-}
-
-.p1:hover, .p2:hover , .p3:hover, .p4:hover, .p5:hover, .p6:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    text-decoration: underline;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-radius: 20px;
-    text-align: center;
-    transform: scale(1.3);
+#myprofession{
+    font-size: 17pt;
 }
 
 .music{
-    background-image: url(Pictures/Backgroundmusic.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.431)),url(Pictures/MusicBg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    background-repeat:no-repeat;
-}
-.music .hobbies {
+    color: rgb(255, 255, 255);
+    padding-bottom: 60pt;
     padding-top: 50pt;
-    margin-left: 100pt;
-    margin-right: 50pt;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.Muspic1{
-    padding-right: 30pt;
+.musicdes{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-family: 'Tahoma';
+    margin-bottom: 30pt;
 }
 
-.Muspic2{
-    padding-left: 30pt;
+.musicdes h2{
+    text-align: center;
+    font-size: 25pt;
+}
+
+.musicdetail{
+    font-size: 20pt;
+}
+
+.musiclist{
+    padding-left: 130px;
+    font-size: 17pt;
+    list-style-type:circle;
+}
+
+.Hobbies{
+    font-family: 'Poppins';
+}
+
+.Tabs{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.tabsdata{
+    padding-left: 10pt;
+    padding-right: 10pt;
+    padding-bottom: 20pt;
+}
+
+.songtitle{
+    font-size: 18pt;
+}
+
+.Labelshobby{
+    font-weight: bold;
+    font-size: 25pt;
+    text-decoration: underline;
+}
+
+.Cov{
+    border: 10pt solid rgb(72, 72, 72);
+    background-color: black;
+    width:350pt; 
+    height:200pt;
+}
+
+#FavCov{
+    border: 5pt solid rgb(72, 72, 72);
+    background-color: black;
+    width:650pt; 
+    height:350pt;
 }
