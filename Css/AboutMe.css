@@ -9,8 +9,14 @@
     border-top: 8px solid rgb(156, 156, 156);
     border-bottom: 8px solid rgb(156, 156, 156);
     font-family: 'Poppins';
-  }
+}
 
+@media only screen and(max-width:800px){
+	.container{
+		width:100%;
+		padding:10px;
+	}
+}
 .contop{
     text-align: center;
 }
@@ -60,6 +66,13 @@
     color: rgb(255, 255, 255);
     padding-bottom: 60pt;
     padding-top: 50pt;
+}
+
+@media only screen and(max-width:800px){
+	.music{
+		width:100%;
+		padding:10px;
+	}
 }
 
 .musicdes{
@@ -115,13 +128,14 @@
 .Cov{
     border: 10pt solid rgb(72, 72, 72);
     background-color: black;
-    width:350pt; 
+    width:300pt; 
     height:200pt;
+    padding: auto;
 }
 
 #FavCov{
     border: 5pt solid rgb(72, 72, 72);
     background-color: black;
-    width:650pt; 
+    width:550pt; 
     height:350pt;
 }
