@@ -71,6 +71,7 @@
 
 .DATABASE{
     color: white;
+    font-size: 10pt;
     padding: 5px 22px;
 }
 
@@ -80,51 +81,51 @@
 }
 
 #sqlbtn{
-    margin-left: 27pt;
+    margin-left: 67pt;
 }
 
 #sqlbtn2{   
-    margin-left: 63pt;
+    margin-left: 83pt;
 }
 
 #sqlbtn3{ 
-    margin-left: 205pt;
+    margin-left: 225pt;
 }
 
 #sqlbtn4{ 
-    margin-left: 43pt;
+    margin-left: 73pt;
 }
 
 #sqlbtn5{   
-    margin-left: 214pt;
+    margin-left: 234pt;
 }
 
 #sqlbtn6{ 
-    margin-left: 241pt;
+    margin-left: 271pt;
 }
 
 #sqlbtn7{
-    margin-left: 241pt;
+    margin-left: 271pt;
 }
 
 #sqlbtn8{
-    margin-left: 241pt;
+    margin-left: 271pt;
 }
 
 #sqlbtn9{
-    margin-left: 117pt;
+    margin-left: 147pt;
 }
 
 #sqlbtn10{
-    margin-left: 122pt;
+    margin-left: 152pt;
 }
 
 #sqlbtn11{
-    margin-left: 28pt;
+    margin-left: 48pt;
 }
 
 #sqlbtn12{
-    margin-left: 28pt;
+    margin-left: 48pt;
 }
 
 
