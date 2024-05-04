@@ -8,102 +8,192 @@
         top: 0;
         left: 0;
         right: 0;
-        }
+    }
         
-        .mainheader a {
+	.mainheader a {
         text-decoration: none;
         color: white;
         margin-right: 20px;
         transition: transform 0.3s;
-        }
+    }
         
-        .mainheader a:hover {
+    .mainheader a:hover {
         transform: scale(1.1);
         color: #eeff00;
-        }
+    }
 
-        .mainheader .flex-center {
+    .mainheader .flex-center {
         display: flex;
         position: fixed;
         right: 0;
-        }
+    }
 	
 	.mainheader .github{
         animation: rotate 4s linear infinite;
+    }
+
+    @keyframes rotate {
+    	0% {
+        	transform: rotate(0deg);
     	}
-    	@keyframes rotate {
-       		0% {
-            transform: rotate(0deg);
-        	}
-        	100% {
+        100% {
             transform: rotate(360deg);
-        	}
-    	}
+        }
+    }
 
-        .mainheader .ig{
+    .mainheader .ig{
         animation: scaleAnimation 2s linear infinite alternate;
-    	}
-    	@keyframes scaleAnimation {
-        	0% {
-            transform: scale(1);
-        	}
-        	50% {
-            transform: scale(1.3); 
-        	}
-        	100% {
-            transform: scale(1);
-        	}
-      	 }
+    }
 	
-         .mainheader .twitter{
+    @keyframes scaleAnimation {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.3); 
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+	
+    .mainheader .twitter{
          animation: upDown 1s ease-in-out infinite alternate;
-      	}
-	@keyframes upDown {
-	     	0% {
-            transform: translateY(0);
-        	}
-	       100% {
-            transform: translateY(4px);
-        	}
-    	}
+    }
 
-    	.mainheader .facebook{
+	@keyframes upDown {
+	    0% {
+            transform: translateY(0);
+        }
+	    100% {
+            transform: translateY(4px);
+        }
+    }
+
+    .mainheader .facebook{
      	animation: leftright 1s ease-in-out infinite alternate;
-    	}
-        @keyframes leftright {
-            	0% {
-	     transform: translateX(0);
-            }
-            	100% {
+    }
+    @keyframes leftright {
+        0% {
+	    	transform: translateX(0);
+        }
+        100% {
              transform: translatex(4px); 
-            }
-        }	
+        }
+    }	
+
 	.off{
         transition: transform 0.3s;
-        }
+    }
 	
-        .off:hover{
- 	 transform: rotateY(180deg);
+    .off:hover{
+ 		transform: rotateY(180deg);
 	}
+	
+	.nav{
+    	display: none;
+		margin-top: -10pt;
+		margin-bottom: -10pt;
+		font-size:30px;
+		cursor:pointer; 
+		color: white; 
+		margin-right: 5pt;
+		margin-left: 20pt; 
+		border: 1pt solid white; 
+		padding-top: 5pt;
+		padding-bottom: 5pt;
+		padding-left: 7pt; 
+		padding-right: 7pt; 
+		transition: 0.1s ease-in-out;
+	}
+
+	.nav:hover{
+		transform: scale(1.3);
+		border-radius: 25%;
+		background-color: white;
+		color: black;
+	}
+
+	.nav:active{
+		transform: scale(1);
+		border-radius: 25%;
+		background-color: rgb(69, 69, 69);
+		color: rgb(255, 255, 255);
+	}
+
+	.navibar{
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgb(0, 0, 0);
+		border-right: 2pt solid white;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+		  
+	.closebtn {
+		position: absolute;
+		top: 0;
+		right: 0px;
+		font-size: 36px;
+		margin-left: 50px;
+		padding-top: 10pt;
+	}
+
+	.hidea{
+		padding-bottom: 10pt;
+		display: flex;
+		margin-left: 40pt;
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+		font-size: medium;
+	}
+
+	.hidea:hover{
+		text-decoration: underline;
+	}
+
+	@media screen and (max-width: 768px) {
+        .nav {
+            display: block;
+        }
+        .aspe{
+            display: none;
+        }
+    }
 </style>
 
 <header>
 	<div class="mainheader">
-	
-		<a href="index.html" style="margin-right: 30px; margin-left: 10px;"> HOME </a>
-		<a href="AboutMe.html" style="margin-right: 30px;"> ABOUT ME </a>
-		<a href="Webdev.html" style="margin-right: 30px;"> WEB DEVELOPMENT </a>
-		<a href="http://stephenphp.great-site.net/Php" style="margin-right: 30px;"> PHP </a>
-		<a href="Resume.html" style="margin-right: 30px;"> RESUME </a>
+		<div class="navibar" id="navibar">
+			<label style="margin-left: 7pt; font-weight: bold; font-size: 15pt;">WELCOME STRANGER</label>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<p style="border-bottom: 2pt solid white;"></p>
+			<a href="index.html" class="hidea"style="font-size: 15pt;">HOME</a>
+			<a href="AboutMe.html" class="hidea" style="font-size: 15pt;">ABOUT ME</a>
+			<a href="Webdev.html" class="hidea" style="font-size: 15pt;">WEB DEVELOPMENT</a>
+			<a href="http://stephenphp.great-site.net/Php"  class="hidea" style="font-size: 15pt;">PHP</a>
+			<a href="Resume.html" class="hidea" style="font-size: 15pt;">RESUME</a>
+		</div>
+
+		<span class="nav" onclick="openNav()"> <i class="fa-solid fa-bars"></i></span>
+		<a href="index.html" class="aspe" style="margin-right: 30px; margin-left: 10px;"> HOME </a>
+		<a href="AboutMe.html" class="aspe" style="margin-right: 30px;"> ABOUT ME </a>
+		<a href="Webdev.html" class="aspe" style="margin-right: 30px;"> WEB DEVELOPMENT </a>
+		<a href="http://stephenphp.great-site.net/Php" class="aspe" style="margin-right: 30px;"> PHP </a>
+		<a href="Resume.html" class="aspe" style="margin-right: 30px;"> RESUME </a>
+
 	
 	<div class="flex-center">
-	
 		<a href="https://github.com/StephenGotHacked"><i class="fa fa-github fa-lg github"></i></a>
           	<a href="https://twitter.com/SkylerHades"><i class="fa fa-twitter fa-lg twitter"></i></a>	
          	<a href="https://www.facebook.com/profile.php?id=100010312052822" target="_blank"><i class="fa fa-facebook fa-lg facebook"></i></a>
           	<a href="https://www.instagram.com/ohediwiw/" target="_blank"><i class="fa fa-instagram fa-lg ig"></i></a>
           	<a href="404.html"><i class="fa-solid fa-power-off off"></i></a>
-		
 	</div>
 	</div>
 </header>
