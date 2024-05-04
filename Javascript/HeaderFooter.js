@@ -13,3 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('footer').innerHTML = data;
        });
 });
+function openNav() {
+    document.getElementById("navibar").style.width = "250px";
+}
+        
+function closeNav() {
+    document.getElementById("navibar").style.width = "0";
+}
